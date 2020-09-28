@@ -48,6 +48,9 @@ export class Page1Component implements OnInit {
   SetTime(event:any){
     event.target.value=this.timeService.getTime()
   }
+  EndTest(){
+    this.scoresService.SetEnd();
+  }
   ngOnInit() {
   
 this.flag=this.scoresService.getScore1()

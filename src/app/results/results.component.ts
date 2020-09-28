@@ -1,12 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewEncapsulation } from '@angular/core';
 import { ScoresService } from '../scores.service';
 import { TimeService } from '../time.service';
+
+
 @Component({
   selector: 'app-results',
   templateUrl: './results.component.html',
-  styleUrls: ['./results.component.css']
+  styleUrls: ['./results.component.css'],
+   encapsulation: ViewEncapsulation.None,
 })
 export class ResultsComponent implements OnInit {
+  
+  zeroend:string;
+  end:string;
   qs=0;
   so=0;
   apa=0;
@@ -167,6 +173,12 @@ note9="-";
       this.time13=this.scoresService.gettime13();
       this.time14=this.scoresService.gettime14();
       this.time15=this.scoresService.gettime15();
+       if (this.scoresService.GetZeroEnd()==true){
+        this.end='<p class="warning">THREE CONSECUTIVE ZEROES. ENDING TEST</p>';
+      }
+      if (this.scoresService.GetEnd()==true){
+        this.end='<p class="warning">TEST ENDED PREMATURELY</p>';
+      }
 
   }
 

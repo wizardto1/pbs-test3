@@ -26,6 +26,10 @@ export class ScoresService {
   score20:any="skipped";
   score21:any="skipped";
   score22:any="skipped";
+  oneskip:boolean=false;
+  twoskip:boolean=false;
+  zeroend:boolean=false;
+  end:boolean=false;
   zerocounter:number=0;
   button1:boolean;
   button2:boolean;
@@ -468,6 +472,34 @@ setnote19(note){this.note19=note}
     console.log(this.zerocounter)
     return this.zerocounter
   }
+  SetOneSkip(){
+    this.oneskip=true;
+  }
+  GetOneSkip(){
+    return this.oneskip
+  }
+  SetTwoSkip(){
+    this.twoskip=true;
+  }
+  GetTwoSkip(){
+    return this.twoskip
+  }
+  SetEnd(){
+    this.end=true;
+  }
+  GetEnd(){
+   
+    return this.end
+  }
+  SetZeroEnd(){
+    this.zeroend=true;
+  }
+  GetZeroEnd(){
+    return this.zeroend;
+  }
+
+
+
 
 
   reset(){
@@ -566,6 +598,10 @@ setnote19(note){this.note19=note}
         this.time15="-"
   this.test+=1
   this.zerocounter=0;
+  this.end=false;
+  this.zeroend=false;
+  this.oneskip=false;
+  this.twoskip=false;
   return
   }
 

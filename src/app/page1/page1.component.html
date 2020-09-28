@@ -27,7 +27,7 @@ Place 1 foot directly in front of the other foot, touching heel to toe. Look str
 
   </div>
 <div class="bottom">
-        <button [routerLink]="['/results']" (click)="setScore1(flag)" style="background-color:red"> End Test</button>
+        <button [routerLink]="['/results']" (click)="EndTest()" style="background-color:red"> End Test</button>
       <button  (click)="setScore1(flag);gotoPage(flag)" [disabled]="!buttonDisabled"> Next</button>
 
  </div>
