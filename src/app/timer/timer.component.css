@@ -17,13 +17,13 @@
   border:solid;
   border-color:blue;
   display:table;
-  margin:auto;
+  
   align-content:center;
   text-align:center;
-  border-radius:1vw;
+
   position:relative;  
-  right:.5vh;
-  width:90vw;
+  width:99%;
+
   height:5vh;
   
 

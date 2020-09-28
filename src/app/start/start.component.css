@@ -4,23 +4,23 @@ p{
 .header{
   text-align:center;
   font-family:Lato;
-  
+   
   border:solid;
   display: flex;
   justify-content: center;
   align-items: center; 
-  height:10vh;
-  margin-bottom:2vh;
+ 
   border-color:blue;
+  height:5vh;
 }
 .body{
-   text-align:left;
+   text-align:center;
   font-family:Lato;
   font-size:3vh;
   border:solid;
   padding:1vh;
-  margin-bottom:2vh;
-  height:70vh;
+  
+  height:84vh;
   border-color:blue;
   overflow-x: hidden;
 }
@@ -28,19 +28,18 @@ button{
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1vh 3vh;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
- 
+  font-size: 2vh;
 }
 .bottom{
   
   font-family:Lato;
-  height:8vh;
+  height:5vh;
   border:solid;
-  padding:1vh;
+  padding:.5vh;
   
   border-color:blue;
   justify-content:space-between;

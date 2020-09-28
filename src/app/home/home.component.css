@@ -11,7 +11,7 @@ p{
   align-items: center; 
  
   border-color:blue;
-  height:10vh;
+  height:5vh;
 }
 .body{
    text-align:center;
@@ -19,16 +19,15 @@ p{
   font-size:3vh;
   border:solid;
   padding:1vh;
-   margin-top:2vh;
-  margin-bottom:2vh;
-  height:70vh;
+  
+  height:84vh;
   border-color:blue;
 }
 button{
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1vh 3vh;
   text-align: center;
   text-decoration: none;
   display: inline-block;
