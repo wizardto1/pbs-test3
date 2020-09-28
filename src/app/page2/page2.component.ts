@@ -58,6 +58,9 @@ this.flag=this.scoresService.getScore2();
 this.buttonDisabled=this.scoresService.getButton2();
 this.flag2=this.scoresService.getLeg2();
   }
+    EndTest(){
+    this.scoresService.SetEnd();
+  }
   radioEventHandler(event:any){
     
     this.buttonDisabled=true;

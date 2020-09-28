@@ -25,6 +25,9 @@ flag;
       this.note = event.target.value;
       console.log(this.note)
     }
+      EndTest(){
+    this.scoresService.SetEnd();
+  }
   
   ngOnInit() {
   

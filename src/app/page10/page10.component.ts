@@ -43,6 +43,9 @@ export class Page10Component implements OnInit {
       this.note = event.target.value;
       
     }
+      EndTest(){
+    this.scoresService.SetEnd();
+  }
   ngOnInit() {
   
 this.flag=this.scoresService.getScore10()

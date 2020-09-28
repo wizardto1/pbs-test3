@@ -34,6 +34,9 @@ flag2="-";
         this.router.navigate(['/page7']);
       }
   }
+    EndTest(){
+    this.scoresService.SetEnd();
+  }
   OnInput (event:any){
       this.time = event.target.value;
       

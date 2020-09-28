@@ -32,6 +32,9 @@ flag;
       this.note = event.target.value;
       
     }
+      EndTest(){
+    this.scoresService.SetEnd();
+  }
   ngOnInit() {
   
 this.flag=this.scoresService.getScore5();

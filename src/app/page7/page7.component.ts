@@ -50,6 +50,9 @@ flag2="-";
       this.flag2 = event.target.value;
       
     }
+      EndTest(){
+    this.scoresService.SetEnd();
+  }
   ngOnInit() {
   
 this.flag=this.scoresService.getScore7();

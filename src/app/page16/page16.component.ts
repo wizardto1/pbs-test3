@@ -35,6 +35,9 @@ note="-";
       }
     
   }
+    EndTest(){
+    this.scoresService.SetEnd();
+  }
   OnInput(event:any){
       this.time = event.target.value;
       
