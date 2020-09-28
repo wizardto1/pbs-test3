@@ -10,7 +10,7 @@ export class InfoComponent implements OnInit {
 today= new Date();
   jstoday = '';
   testnumber:number
-  constructor(private scoresService: ScoresService) {this.jstoday = formatDate(this.today, 'MM-dd-yyyy ', 'en-US'); }
+  constructor(private scoresService: ScoresService) {this.jstoday = formatDate(this.today, 'MM-dd-yyyy hh:mm ', 'en-US'); }
 
   ngOnInit() {
     this.testnumber=this.scoresService.getTest()
