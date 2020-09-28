@@ -20,7 +20,8 @@ constructor(private scoresService: ScoresService, private timeService: TimeServi
     this.scoresService.setScore8(flag)
     this.scoresService.setButton8(this.buttonDisabled)
     this.scoresService.setDevice1(this.flag2)
-     this.time=this.timeService.getTime()
+     this.time=this.timeService.getTime();
+     this.scoresService.SetTwoSkip2();
      this.scoresService.setnote8(this.note)
      this.scoresService.settime6(this.time)
       this.scoresService.Up1();

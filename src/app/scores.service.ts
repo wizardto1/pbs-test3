@@ -479,8 +479,11 @@ setnote19(note){this.note19=note}
     return this.oneskip
   }
   SetTwoSkip(){
-    this.twoskip=true;
-  }
+    this.twoskip=true;}
+    SetTwoSkip2(){
+    if(this.twoskip=true){this.twoskip=false;}
+    }
+  
   GetTwoSkip(){
     return this.twoskip
   }

@@ -41,8 +41,7 @@ export class Page2Component implements OnInit {
            this.scoresService.setScore8(1);
         this.scoresService.setScore9(1);
          this.scoresService.setScore10(1);
-          this.scoresService.setScore11(1);
-           
+          this.scoresService.setScore11(1);         
     this.scoresService.SetTwoSkip();
       this.router.navigate(['/page12']);}
     
