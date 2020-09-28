@@ -29,7 +29,7 @@ flag;
        
      }
       if (this.scoresService.GetCounter()==3){
-        window.alert('Three Consecutive Zeros! Ending Test.');
+       this.scoresService.SetZeroEnd();
         this.router.navigate(['/results']);
       }
       else{

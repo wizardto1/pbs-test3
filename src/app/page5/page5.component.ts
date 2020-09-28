@@ -22,6 +22,7 @@ flag;
         this.scoresService.Reset0()
      }
       if (this.scoresService.GetCounter()==3){
+        this.scoresService.SetZeroEnd();
         this.router.navigate(['/results']);
       }
       else{
