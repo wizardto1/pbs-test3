@@ -15,7 +15,7 @@ Time task.
 </div>
 <app-timer></app-timer>
 <div class="options"> <div class="radio-toolbar">
- 
+<div [innerHTML]="skip"> </div>
 
   Stands:<br>
   <input type="radio" id="1" name="q3" value="1" [(ngModel)]="flag" (change)=radioEventHandler($event)>

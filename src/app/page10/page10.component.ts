@@ -15,6 +15,7 @@ export class Page10Component implements OnInit {
     constructor(private scoresService: ScoresService,private timeService: TimeService, private router: Router) { }
 
   setScore10(flag){
+    console.log(flag)
     this.scoresService.setScore10(flag)
     this.scoresService.setButton10(this.buttonDisabled)
     this.time=this.timeService.getTime()
@@ -43,9 +44,10 @@ export class Page10Component implements OnInit {
       this.note = event.target.value;
       
     }
-      EndTest(){
+    EndTest(){
     this.scoresService.SetEnd();
   }
+      
   ngOnInit() {
   
 this.flag=this.scoresService.getScore10()

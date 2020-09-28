@@ -10,7 +10,8 @@ import { TimeService } from '../time.service';
 export class Page12Component implements OnInit {
 flag;
   time="-";
-  note="-"
+  note="-";
+  skip;
   buttonDisabled:boolean=false;
   constructor(private scoresService: ScoresService,private timeService: TimeService, private router: Router) { }
 
@@ -51,6 +52,9 @@ flag;
 this.flag=this.scoresService.getScore12()
 this.buttonDisabled=this.scoresService.getButton12()
 this.time="-"
+if (this.scoresService.GetTwoSkip()==true){
+  this.skip='<p>Skipped to Question 10</p>'
+}
   }
   radioEventHandler(event:any){
     

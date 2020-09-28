@@ -11,6 +11,7 @@ flag;
 note="-";
   time="-";
   buttonDisabled:boolean=false;
+  skip;
   constructor(private scoresService: ScoresService, private timeService: TimeService) { }
 
   setScore3(flag){
@@ -42,6 +43,9 @@ note="-";
 this.flag=this.scoresService.getScore3();
 this.buttonDisabled=this.scoresService.getButton3()
 this.time="-"
+if (this.scoresService.GetOneSkip()==true){
+  this.skip="<p>Skipped to Question 3</p>"
+}
   }
   radioEventHandler(event:any){
     

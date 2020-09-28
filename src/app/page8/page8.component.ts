@@ -12,6 +12,7 @@ flag;
   time="-";
   flag2='-';
   note="-";
+  skip;
   buttonDisabled:boolean=false;
 constructor(private scoresService: ScoresService, private timeService: TimeService, private router: Router) { }
 
@@ -56,6 +57,9 @@ this.flag=this.scoresService.getScore8();
 this.flag=this.scoresService.getDevice1();
 this.buttonDisabled=this.scoresService.getButton8()
 this.time="-"
+if (this.scoresService.GetTwoSkip()==true){
+  this.skip='<p>Skipped to Question 6</p>'
+}
   }
   radioEventHandler(event:any){
     
