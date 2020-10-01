@@ -12,6 +12,7 @@ p{
  
   border-color:blue;
   height:5vh;
+  border-bottom:0;
 }
 .body{
    text-align:center;
@@ -35,12 +36,11 @@ button{
   font-size: 2vh;
 }
 .bottom{
-  
   font-family:Lato;
   height:5vh;
   border:solid;
   padding:.5vh;
-  
+  border-top:0;
   border-color:blue;
   justify-content:space-between;
   display:flex}

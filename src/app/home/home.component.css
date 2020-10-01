@@ -12,6 +12,7 @@ p{
  
   border-color:blue;
   height:5vh;
+   border-bottom: 0;
 }
 .body{
    text-align:center;

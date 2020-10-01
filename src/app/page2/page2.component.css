@@ -9,7 +9,7 @@ p{
   display: flex;
   justify-content: center;
   align-items: center; 
- 
+  border-bottom:0;
   border-color:blue;
   height:5vh;
 }
@@ -35,7 +35,7 @@ button{
   font-size: 2vh;
 }
 .bottom{
-  
+  border-top:0;
   font-family:Lato;
   height:5vh;
   border:solid;
@@ -50,7 +50,7 @@ button{
   font-size:3vh;
   border:solid;
   padding:1vh;
-  
+  border-bottom:0;
   height:43vh;
   border-color:blue;
   overflow-x: hidden;
@@ -61,7 +61,7 @@ button{
   font-size:3vh;
   border:solid;
   padding:1vh;
-  
+  border-bottom:0;
   height:37vh;
   border-color:blue;
   overflow-x: hidden;
