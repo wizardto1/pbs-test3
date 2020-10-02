@@ -51,7 +51,7 @@ button{
   border:solid;
   padding:1vh;
   border-bottom:0;
-  height:43vh;
+  height:38vh;
   border-color:blue;
   overflow-x: hidden;
 }
@@ -63,7 +63,7 @@ button{
   padding:1vh;
   border-top:0;
   border-bottom:0;
-  height:37vh;
+  height:31vh;
   border-color:blue;
   overflow-x: hidden;
 }
